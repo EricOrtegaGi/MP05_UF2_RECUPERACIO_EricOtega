@@ -2,6 +2,8 @@
 
 ## Proves Pizzeria Pepe ##
 
+codi
+
 ```
 public class pizzeriaPepe {
 
@@ -14,6 +16,7 @@ public class pizzeriaPepe {
     }
 }
 ```
+tests
 
 ```
 import org.junit.jupiter.api.*;
@@ -47,5 +50,56 @@ class pizzeriaPepeTest {
         Exception exception = Assertions.assertThrows(NumberFormatException.class, () -> {
             pizzeriaPepe.potCarregar(Integer.parseInt("cinc"));
         });
+}
+```
+
+## Proves JeanClaude ##
+
+codi
+
+```
+ public static void main(String[] args) {
+        int carrega1 = 450;
+        System.out.println(potPortar(carrega1));
+    }
+    public static int potPortar(int carrega) {
+        if (carrega < 500) {
+            return -1;
+        } else if (carrega > 750) {
+            return -1;
+        } else if (carrega > 900) {
+            return -1;
+        }
+        return 1;
+    }
+```
+tests
+```
+class jeanClaudeTest {
+
+    //entre els limits
+    @Test
+    void prova() {
+        System.out.println( jeanClaude.potPortar(500));
+    }
+
+    // superior al limit superior
+    @Test
+    void prova1() {
+        System.out.println( jeanClaude.potPortar(1000));
+    }
+    //inferior al limit inferior
+    @Test
+    void prova2() {
+        System.out.println( jeanClaude.potPortar(450));
+    }
+    
+    //no numeric
+    @Test
+    void prova3() {
+        System.out.println( jeanClaude.potPortar(a));
+    }
+   
+
 }
 ```
