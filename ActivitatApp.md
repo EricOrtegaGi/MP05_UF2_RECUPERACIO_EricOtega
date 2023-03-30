@@ -21,5 +21,3 @@ Menu Main
 Menu Associacions:
 
 ![MENUASSOWHITE](https://user-images.githubusercontent.com/114953110/228920044-b85b3e29-b82f-4168-bca2-7293eab89805.png)
-
-- Proves Caixa Negra:
